@@ -46,9 +46,20 @@ public class Book {
         return  author +": "+ title + "("+year+")"; 
     }
 
- //   public int compareTo(Book other) {
+    public int compareTo(Book other) {
 
         // YOUR CODE HERE
-
- //   }
+        int result;
+        if(this.author.equals(other.author) 
+            && this.title.equals(other.title)
+            && this.year==other.year){
+            result = 0;
+        }else if(this.author.equals(other.author) 
+            || this.title.equals(other.title)
+            || this.year==other.year){
+            result = -1;
+        }else{
+            result = 1;}
+        return result;    
+    }
 }
