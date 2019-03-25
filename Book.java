@@ -2,9 +2,9 @@ public class Book {
 
 
         // YOUR VARIABLES HERE
-    private String author;
-    private String title;
-    private int year;
+    public String author;
+    public String title;
+    public int year;
 
     public Book (String author, String title, int year) {
 
