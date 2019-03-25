@@ -37,7 +37,7 @@ public class StringUtils{
 		//Find out how many blanks in the array
 		int number=0;
 		for(int i=0; i<words.length; i++){
-			if(words[i].equals(" ")){
+			if(words[i].isEmpty()){
 				number++;
 			}
 		}
